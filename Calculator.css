@@ -1,0 +1,78 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0e3eb;
+}
+.calculator{
+    border: black solid 1px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 248, 249);
+    line-height: 0;
+    margin-bottom: 2px;
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 2px;
+
+}
+.displaychild1{
+    border-bottom: 0;
+    border-radius: 0;
+    pointer-events: none;
+    color: black;
+    background-color: transparent;
+    border: none;
+}
+.displaychild2{
+    border-top: 0;
+    background-color: transparent;
+    border-radius: 0;
+    pointer-events: none;
+    color: black;
+    border: none;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons button{
+    width: 60px;
+    height: 20px;
+    padding: 2px;
+    font-size: 12px;
+    margin: 1px;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    background-color: rgb(66, 139, 202);
+}
+.buttons .operator.CE{
+    background-color: rgb(217, 83, 79);
+}
+.buttons .operator.Del{
+    background-color: rgb(240, 173, 78);
+}
+.buttons .operator{
+    background-color: rgb(92, 184, 92);
+}
+.buttons .operator.dot{
+    background-color: rgb(91, 192, 222);
+}
+.buttons .operator.equal{
+    background-color: rgb(91, 192, 222);
+}
